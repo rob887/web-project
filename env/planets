@@ -1,0 +1,69 @@
+import pandas as pd
+ 
+# Data for the planets
+# data = {
+#     'Name': ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'],
+#     'Average Temperature (Celsius)': [167, 464, 15, -20, -145, -178, -224, -218],
+#     'Radius (km)': [2439, 6052, 6371, 3389, 69911, 58232, 25362, 24622],
+#     'Color': ['Gray', 'Yellow', 'Blue', 'Red', 'Orange and White', 'Yellow and Brown', 'Blue-Green', 'Blue'],
+#     'Interesting Feature': [
+#         'Caloris Basin - largest impact crater',
+#         'Thick clouds of sulfuric acid',
+#         'Supports life and has diverse ecosystems',
+#         'Olympus Mons - largest volcano in the solar system',
+#         'Great Red Spot - massive storm',
+#         'Beautiful rings made of ice and dust',
+#         'Rotates on its side, has extreme seasons',
+#         'Great Dark Spot - atmospheric supersonic storm system'
+#     ]
+    
+ 
+# }
+# Updated Data
+data = {
+    'Name': ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'],
+    'Average Temperature (Celsius)': [167, 464, 15, -20, -145, -178, -224, -218],
+    'Radius/Diameter (km)': [
+        '4879 (diameter)', '12104 (diameter)', '12742 (diameter)', '6779 (diameter)',
+        '139820 (diameter)', '116460 (diameter)', '51118 (diameter)', '49528 (diameter)'
+    ],
+    'Color': ['Grey', 'Yellow', 'Blue', 'Red', 'Orange and White', 'Yellow and Brown', 'Blue-Green', 'Blue'],
+    'Interesting Feature': [
+        'Caloris Basin - largest impact crater',
+        'Thick clouds of sulfuric acid',
+        'Supports life and has diverse ecosystems',
+        'Olympus Mons - largest volcano in the solar system',
+        'Great Red Spot - massive storm',
+        'Beautiful rings made of ice and dust',
+        'Rotates on its side, has extreme seasons',
+        'Great Dark Spot - atmospheric supersonic storm system'
+    ],
+    'Discoverer': ['Unknown', 'Unknown', 'Humans', 'Humans', 'Humans', 'Humans', 'William Herschel', 'Johann Galle'],
+    'Year Discovered': [None, None, 'Ages ago', 'Ages after', 'Ancient times', 'Ancient times', 1781, 1846],
+    'Telescopic Observer': ['Zupus', 'Galileo Galilei', 'GOD', 'Galileo Galilei', 'Galileo Galilei', 'Galileo Galilei', 'William Herschel', 'Johann Galle'],
+    'Year Telescopic Observation': [1639, 1610, '65 million BC', 1610, 1610, 1610, 1781, 1846],
+    'Chemical Composition': [
+        'Primarily composed of iron and nickel',
+        'Mainly composed of carbon dioxide',
+        'Mainly composed of nitrogen and oxygen',
+        'Primarily composed of iron and sulfur',
+        'Mainly composed of hydrogen and helium',
+        'Mainly composed of hydrogen and helium',
+        'Mainly composed of hydrogen, helium, and methane',
+        'Mainly composed of hydrogen, helium, and methane'
+    ],
+}
+ 
+# Creating the DataFrame
+planets_df = pd.DataFrame(data)
+ 
+# Displaying the DataFrame
+print(planets_df)
+
+# Save the DataFrame to an Excel file
+# excel_filename = 'planets_info.xlsx'
+# planets_df.to_excel(excel_filename, index=False)
+ 
+# print(f"The DataFrame has been saved to {excel_filename}")
+
+
